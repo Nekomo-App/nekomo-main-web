@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nekomo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark background color */
+            color: #fff; /* White text color */
+            padding-top: 50px; /* Add some top padding */
+        }
+        .search-container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            background-color: #333; /* Darker background color */
+            border-bottom-left-radius: 10px;
+            border-bottom: 2px solid #444; /* Darker border */
+        }
+        input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            background-color: #444; /* Darker background color */
+            color: #fff; /* White text color */
+            width: 200px;
+        }
+        input[type="submit"] {
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff; /* Blue submit button */
+            color: #fff; /* White text color */
+            cursor: pointer;
+        }
+    </style>
+<script type="text/javascript" nonce="fc25d4e80be44279bad641d27b9" src="//local.adguard.org?ts=1711665062457&amp;type=content-script&amp;dmn=neocities.org&amp;url=https%3A%2F%2Fneocities.org%2Fsite_files%2Fdownload%2Findex.html%3F_%3D1711666734381&amp;app=brave.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-loc&amp;st-dnt"></script>
+<script type="text/javascript" nonce="fc25d4e80be44279bad641d27b9" src="//local.adguard.org?ts=1711665062457&amp;name=AdGuard%20Extra%20%28Beta%29&amp;name=AdGuard%20Popup%20Blocker%20%28Beta%29&amp;type=user-script"></script></head>
+<body>
+    <div class="search-container">
+        <form id="search-form" action="/search" method="get">
+            <input type="text" placeholder="Search..." name="search" onclick="return false;">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("search-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Implement your search logic here
+            alert("Search functionality is not implemented yet.");
+        });
+    </script>
+</body>
+</html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Dark mode styles */
+        body {
+            background-color: #121212; /* Dark background color */
+            color: #fff; /* White text color */
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #333; /* Darker background color */
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            z-index: 1000;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent black */
+            z-index: 999;
+        }
+        /* Square ring around the close button with rounded corners */
+        .close-button {
+            border: 2px solid #fff; /* White border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 5px 10px; /* Padding around the button */
+            background-color: transparent; /* Transparent background */
+            color: #fff; /* White text color */
+            cursor: pointer; /* Cursor style */
+        }
+        .close-button:hover {
+            background-color: #fff; /* White background color on hover */
+            color: #121212; /* Dark text color on hover */
+        }
+    </style>
+    <script type="text/javascript" nonce="fc25d4e80be44279bad641d27b9" src="//local.adguard.org?ts=1711144691623&amp;type=content-script&amp;dmn=neocities.org&amp;url=https%3A%2F%2Fneocities.org%2Fsite_files%2Fdownload%2Findex.html%3F_%3D1711145722252&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-loc&amp;st-dnt"></script>
+<script type="text/javascript" nonce="fc25d4e80be44279bad641d27b9" src="//local.adguard.org?ts=1711144691623&amp;name=AdGuard%20Extra%20%28Beta%29&amp;name=AdGuard%20Popup%20Blocker%20%28Beta%29&amp;type=user-script"></script><script>
+        // Function to show the pop-up window and overlay
+        function showPopup() {
+            // Check if the flag 'popupShown' is not set in localStorage
+            if (!localStorage.getItem('popupShown')) {
+                // Show the pop-up window and overlay
+                document.getElementById('popup').style.display = 'block';
+                document.getElementById('overlay').style.display = 'block';
+                // Set the flag 'popupShown' in localStorage to indicate that the popup has been shown
+                localStorage.setItem('popupShown', 'true');
+            }
+        }
+
+        // Function to close the pop-up window and overlay
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+</head>
+<body onload="showPopup()"> <!-- Call the function when the page loads -->
+
+<!-- Pop-up window -->
+<div id="popup" class="popup">
+    <h2>Human Verification</h2>
+    <p>Please verify that you are not a bot.</p>
+    <!-- Add your verification form or any other content here -->
+    <button class="close-button" onclick="closePopup()">Close</button> <!-- Close button with square ring -->
+</div>
+
+<!-- Overlay -->
+<div id="overlay" class="overlay"></div>
+</body>
+</html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nekomo App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff; /* Set text color to white */
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #fff; /* Set heading color to white */
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        .list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .list li {
+            margin-bottom: 10px;
+        }
+        .list li a {
+            text-decoration: none;
+            color: #007bff; /* Set link color to default blue */
+        }
+    </style>
+    <script type="text/javascript" nonce="fc25d4e80be44279bad641d27b9" src="//local.adguard.org?ts=1711144691623&amp;type=content-script&amp;dmn=neocities.org&amp;url=https%3A%2F%2Fneocities.org%2Fsite_files%2Fdownload%2Findex.html%3F_%3D1711145166368&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-loc&amp;st-dnt"></script>
+<script type="text/javascript" nonce="fc25d4e80be44279bad641d27b9" src="//local.adguard.org?ts=1711144691623&amp;name=AdGuard%20Extra%20%28Beta%29&amp;name=AdGuard%20Popup%20Blocker%20%28Beta%29&amp;type=user-script"></script><script>
+        setTimeout(function(){
+            window.location.href = "https://github.com/Nekomo-App/Nekomo"; // Redirect to GitHub after 5 seconds
+        }, 5000); // 5000 milliseconds = 5 seconds
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Nekomo App</h1>
+        <p>Nothing is here.</p>
+        <p>Make sure to bring the boba!</p>
+        <h2>Other Recommended Apps</h2> <!-- Header added here -->
+        <ul class="list">
+            <li><a href="https://github.com/rebelonion/Dantotsu">Dantotsu App</a></li>
+            <li><a href="https://github.com/recloudstream/cloudstream">Cloudstream App</a></li>
+            <li><a href="#">Miru App (no links yet)</a></li>
+        </ul>
+    </div>
+</body>
+</html>
