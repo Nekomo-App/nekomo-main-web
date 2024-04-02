@@ -1,129 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nekomo</title>
+    <title>Nekomo Anime App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #121212; /* Dark background color */
-            color: #fff; /* White text color */
-            padding-top: 50px; /* Add some top padding */
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            margin-top: 50px;
         }
-        .search-container {
-            position: fixed;
-            top: 0;
-            right: 0;
-            padding: 10px;
-            background-color: #333; /* Darker background color */
-            border-bottom-left-radius: 10px;
-            border-bottom: 2px solid #444; /* Darker border */
+        h1 {
+            color: #fff;
         }
-        input[type="text"] {
-            padding: 8px;
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
             border-radius: 5px;
-            border: none;
-            background-color: #444; /* Darker background color */
-            color: #fff; /* White text color */
-            width: 200px;
+            transition: background-color 0.3s ease;
         }
-        input[type="submit"] {
-            padding: 8px 15px;
-            border-radius: 5px;
-            border: none;
-            background-color: #007bff; /* Blue submit button */
-            color: #fff; /* White text color */
-            cursor: pointer;
-        }
-        /* Dark mode styles */
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #333; /* Darker background color */
-            padding: 20px;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            z-index: 1000;
-        }
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent black */
-            z-index: 999;
-        }
-        /* Square ring around the close button with rounded corners */
-        .close-button {
-            border: 2px solid #fff; /* White border */
-            border-radius: 5px; /* Rounded corners */
-            padding: 5px 10px; /* Padding around the button */
-            background-color: transparent; /* Transparent background */
-            color: #fff; /* White text color */
-            cursor: pointer; /* Cursor style */
-        }
-        .close-button:hover {
-            background-color: #fff; /* White background color on hover */
-            color: #121212; /* Dark text color on hover */
+        .btn:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
-
 <body>
-    <div class="search-container">
-        <form id="search-form" action="/search" method="get">
-            <input type="text" placeholder="Search..." name="search" onclick="return false;">
-            <input type="submit" value="Search">
-        </form>
+    <div class="container">
+        <h1>Nekomo Anime App</h1>
+        <p>Welcome to Nekomo, your go-to anime streaming app!</p>
+        <p>Explore a vast library of your favorite anime series and movies.</p>
+        <a href="https://github.com/Nekomo-App/Nekomo" class="btn">Visit Our GitHub Repository</a>
     </div>
-
-    <div id="popup" class="popup">
-        <h2>Human Verification</h2>
-        <p>Please verify that you are not a bot.</p>
-        <button class="close-button" onclick="closePopup()">Close</button> <!-- Close button with square ring -->
-    </div>
-
-    <div id="overlay" class="overlay"></div>
-
-    <script>
-        document.getElementById("search-form").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the default form submission
-            // Implement your search logic here
-            alert("Search functionality is not implemented yet.");
-        });
-
-        // Function to show the pop-up window and overlay
-        function showPopup() {
-            // Check if the flag 'popupShown' is not set in localStorage
-            if (!localStorage.getItem('popupShown')) {
-                // Show the pop-up window and overlay
-                document.getElementById('popup').style.display = 'block';
-                document.getElementById('overlay').style.display = 'block';
-                // Set the flag 'popupShown' in localStorage to indicate that the popup has been shown
-                localStorage.setItem('popupShown', 'true');
-            }
-        }
-
-        // Function to close the pop-up window and overlay
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-            document.getElementById('overlay').style.display = 'none';
-        }
-    </script>
-    
-    <!-- Redirect after 5 seconds -->
-    <script>
-        setTimeout(function() {
-            window.location.href = "https://example.com"; // Redirect to another site after 5 seconds
-        }, 5000); // 5000 milliseconds = 5 seconds
-    </script>
 </body>
-
 </html>
