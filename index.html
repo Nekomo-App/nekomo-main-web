@@ -3,43 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nekomo Anime App</title>
+    <title>Nekomo App | Coming Soon</title>
+    <meta property="og:url" content="/nekomo" />
+    <meta property="og:title" content="Nekomo App | Coming Soon">
+    <meta property="og:description" content="Nekomo App is on hold or coming soon.">
+    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta name="theme-color" content="#8d2249" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/Images/logo.png" type="image/png">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #121212;
+            background: url('/Images/purple-japanese-painting-ai-generated-1920x1080-v0-0y2eb9annv3b1.webp') no-repeat center center fixed;
+            background-size: cover;
             color: #fff;
             text-align: center;
-            margin-top: 50px;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+            user-select: none; /* Prevent text selection */
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
         }
-        h1 {
-            color: #fff;
+
+        .mist {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('/Images/mist.png') repeat;
+            opacity: 0.5;
+            pointer-events: none;
+            z-index: 0;
+            animation: moveMist 60s linear infinite;
         }
+
+        @keyframes moveMist {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+
         .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+            max-width: 90%;
+            width: 400px;
+            background-color: rgba(51, 51, 51, 0.8);
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
         }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #ddd;
+        }
+
+        a {
+            color: #8d2249;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #0056b3;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
+    <div class="mist"></div>
     <div class="container">
-        <h1>Nekomo Anime App</h1>
-        <p>Welcome to Nekomo, your go-to anime streaming app!</p>
-        <p>Explore a vast library of your favorite anime series and movies.</p>
-        <a href="https://github.com/Nekomo-App/Nekomo" class="btn">Visit Our GitHub Repository</a>
+        <h1>Nekomo App</h1>
+        <p>On Hold / Coming Soon</p>
+        <p>We are working hard on bringing Nekomo to you soon. Please stay tuned for updates.</p>
+        <p>For more information, visit our <a href="https://github.com/Nekomo-App/Nekomo">GitHub repository</a>.</p>
     </div>
 </body>
 </html>
