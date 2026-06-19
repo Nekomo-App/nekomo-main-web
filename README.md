@@ -1,51 +1,61 @@
 <div align="center">
 
-# 🐱 Nekomo App Index
+# 🐱 Nekomo Source Code
 
-A simple navigation hub for the Nekomo project.
+Source code and development resources for the **Nekomo App**.
+
+[🌐 Website](https://nekomoapp.netlify.app) • [📦 Releases](https://github.com/Nekomo-App/Nekomo/releases) • [💻 GitHub](https://github.com/Nekomo-App/Nekomo)
 
 </div>
 
 ---
 
-## 🌐 Official Website
+## 🚀 Quick Navigation
 
-* 🔗 https://nekomoapp.netlify.app
-
----
-
-## 📥 Downloads
-
-* 📦 GitHub Releases (app builds & updates)
-* *(More sources may be added in the future)*
+| Resource             | Link                                          |
+| -------------------- | --------------------------------------------- |
+| 🌐 Website           | https://nekomoapp.netlify.app                 |
+| 💻 GitHub Repository | https://github.com/Nekomo-App/Nekomo          |
+| 📦 Releases          | https://github.com/Nekomo-App/Nekomo/releases |
 
 ---
 
-## 📚 Project Info
+## 📖 About
 
-* Nekomo is an anime tracker built from Shiro-based source code
-* Currently **on hold / unstable development state**
-* Community-driven project with open contributions
+Nekomo is an anime-focused project built from the ashes of **Kuro No** and **Shiro**. This repository contains source code, project resources, and development information related to the Nekomo application.
 
 ---
 
-## 💬 Community
+## 📜 DMCA & Disclaimer
 
-* Discord: *(check main README for invite link)*
-* Discussion & resources sharing available in community spaces
+> **Please read before using, modifying, or distributing this project.**
 
----
+* Nekomo by itself only provides an anime and manga tracker and does not provide any anime or manga streaming or downloading capabilities.
 
-## ⚠️ Notice
+* Nekomo, its developers, and staff do not host any content found within the application. Any images, anime information, and manga information displayed in the app are obtained from public APIs such as **AniList**, **MyAnimeList**, and **Kitsu**.
 
-* This project does **not host or provide anime content**
-* Uses public APIs (AniList, MyAnimeList, Kitsu)
-* Third-party plugins may provide external links (not affiliated)
+* All anime and manga links found within Nekomo originate from various third-party plugins and have no affiliation with Nekomo, its developers, or its staff.
+
+* Nekomo and its owners are not liable for any misuse of content found inside or outside of the application and cannot be held responsible for the distribution of any content accessible through the app.
+
+* By using Nekomo, you acknowledge that the developers are not responsible for any content found within the application. You also agree not to use Nekomo to stream or download copyrighted content.
+
+* If copyright infringement issues arise, please contact the source website directly. The developers assume no legal responsibility for content provided by third-party sources.
 
 ---
 
 <div align="center">
 
-> Built for navigation, clarity, and community access.
+### ⚠️ Legal Notice
+
+Nekomo does **not host media content** and is **not affiliated with content providers or third-party plugins**.
+
+---
+
+### ❤️ Thank You
+
+Thank you for reading and supporting the project.
+
+**— Nekomo Dev Team**
 
 </div>
