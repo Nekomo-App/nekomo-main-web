@@ -48,19 +48,27 @@ For app-related information, releases, and project updates, please visit the mai
 
 ---
 
-## 📜 DMCA & Disclaimer
+<details>
+<summary><strong>⚠️ IMPORTANT: DMCA & LEGAL DISCLAIMER (Click to Read)</strong></summary>
 
-* Nekomo by itself only provides an anime and manga tracker and does not provide any anime or manga streaming or downloading capabilities.
+<br>
 
-* Nekomo, its developers, and staff do not host any content found within the application. Any images, anime information, and manga information displayed in the app are obtained through public APIs such as AniList, MyAnimeList, and Kitsu.
+* Nekomo is an open-source application and does **not** host, store, upload, or distribute any media content.
 
-* All anime and manga links found within Nekomo are provided through third-party plugins and have no affiliation with Nekomo, its developers, or its staff.
+* Nekomo does **not** operate or control any streaming servers, content providers, or third-party sources.
 
-* Nekomo and its owners are not liable for any misuse of content found inside or outside of the application and cannot be held responsible for the distribution of any content accessible through the app.
+* Any metadata, images, or information displayed in the app may come from third-party APIs and services.
 
-* By using Nekomo, you acknowledge that the developers are not responsible for any content found within the application. You also agree not to use Nekomo to stream or download copyrighted content.
+* Nekomo is **not affiliated with, endorsed by, sponsored by, or connected to** AniList, MyAnimeList, Kitsu, TMDb, or any other content provider unless explicitly stated.
 
-* If copyright infringement issues arise, please contact the source website directly. The developers assume no legal responsibility for third-party content.
+* All content, trademarks, and copyrights belong to their respective owners.
+
+* Users are responsible for how they use the software and for complying with applicable laws and regulations.
+
+* If you believe content infringes your rights, please contact the source or provider hosting that content directly. Nekomo cannot remove content it does not host or control.
+
+</details>
+
 
 ---
 
