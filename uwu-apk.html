@@ -6,19 +6,24 @@
     <title>Downloading...</title>
     <script>
         async function fetchLatestRelease() {
-            const apiUrl = 'https://api.github.com/repos/Nekomo-App/Nekomo/releases/latest';
+            // All Nekomo releases are marked "prerelease", so /releases/latest 404s.
+            // Fetch the releases list and use the newest non-draft entry instead.
+            const apiUrl = 'https://api.github.com/repos/Nekomo-App/Nekomo/releases';
+            const releasesUrl = 'https://github.com/Nekomo-App/Nekomo/releases';
             try {
                 const response = await fetch(apiUrl);
-                const data = await response.json();
-                const asset = data.assets.find(asset => asset.name.endsWith('.apk') || asset.name.endsWith('.zip') || asset.name.endsWith('.exe'));
+                const releases = await response.json();
+                const data = Array.isArray(releases) ? releases.find(r => !r.draft) : null;
+                const asset = data && data.assets.find(asset => /\.(apk|zip|exe)$/i.test(asset.name));
 
                 if (asset) {
                     window.location.href = asset.browser_download_url;
                 } else {
-                    console.error('No suitable asset found for download.');
+                    window.location.href = releasesUrl;
                 }
             } catch (error) {
                 console.error('Error fetching the latest release:', error);
+                window.location.href = releasesUrl;
             }
         }
 
