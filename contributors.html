@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributors — Nekomo</title>
+    <meta name="description" content="The people behind Nekomo — from the original Kuro No and Shiro developers to today's community contributors.">
+    <meta property="og:title" content="Contributors — Nekomo">
+    <meta property="og:description" content="The people behind Nekomo, Shiro, and Kuro No.">
+    <meta name="theme-color" content="#8d2249" />
+    <link rel="icon" href="/Images/150f78d18fd597611f77b4ae7d2f1f58.gif" type="image/gif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="gate.js" defer></script>
+    <style>
+        :root {
+            --bg: #0c0508;
+            --surface: rgba(255, 92, 122, 0.05);
+            --surface-border: rgba(255, 92, 122, 0.14);
+            --accent: #e5395f;
+            --accent-bright: #ff5c7a;
+            --accent-deep: #8d2249;
+            --text: #f7ecf0;
+            --text-muted: #b9929f;
+            --radius: 16px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .logo-text { font-family: 'Outfit', 'Inter', sans-serif; }
+        ::selection { background: var(--accent); color: #fff; }
+
+        .bg-fx {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse 80% 50% at 50% -10%, rgba(229, 57, 95, 0.15), transparent 60%),
+                radial-gradient(ellipse 50% 40% at 90% 70%, rgba(141, 34, 73, 0.1), transparent 60%),
+                var(--bg);
+        }
+
+        /* ---------- Nav ---------- */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 28px;
+            background: rgba(12, 5, 8, 0.7);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(255, 92, 122, 0.08);
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text);
+        }
+        .nav-logo img { width: 34px; height: 34px; image-rendering: pixelated; }
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(120deg, #ff7a95, var(--accent-bright) 50%, var(--accent-deep));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-links { display: flex; align-items: center; gap: 6px; }
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 10px;
+            transition: color 0.2s, background 0.2s;
+        }
+        .nav-links a:hover { color: var(--text); background: rgba(255, 92, 122, 0.08); }
+        .nav-cta {
+            background: linear-gradient(135deg, var(--accent-bright), var(--accent-deep));
+            color: #fff !important;
+            font-weight: 600;
+        }
+        .nav-cta:hover { filter: brightness(1.15); }
+        @media (max-width: 640px) {
+            .nav-links a:not(.nav-cta) { display: none; }
+        }
+
+        /* ---------- Content ---------- */
+        main { max-width: 1000px; margin: 0 auto; padding: 140px 24px 90px; }
+        .page-label {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent-bright);
+        }
+        h1 {
+            margin-top: 10px;
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            background: linear-gradient(120deg, #fff 20%, #ffb3c2 55%, var(--accent-bright));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .page-sub { margin-top: 14px; color: var(--text-muted); max-width: 580px; }
+
+        .section-heading {
+            margin-top: 64px;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        .section-heading small {
+            display: block;
+            margin-top: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+
+        /* ---------- Legacy devs ---------- */
+        .legacy-grid {
+            margin-top: 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 18px;
+        }
+        .dev-card {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 24px;
+            border-radius: var(--radius);
+            border: 1px solid var(--surface-border);
+            background: var(--surface);
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+        }
+        .dev-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 92, 122, 0.4);
+            box-shadow: 0 12px 40px rgba(229, 57, 95, 0.12);
+        }
+        .dev-card img {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 92, 122, 0.35);
+            flex-shrink: 0;
+            background: #1d0d15;
+        }
+        .dev-card h3 { font-size: 1.05rem; font-weight: 600; }
+        .dev-card .role { font-size: 0.82rem; color: var(--accent-bright); font-weight: 500; margin-top: 2px; }
+        .dev-card .note { font-size: 0.82rem; color: var(--text-muted); margin-top: 4px; }
+
+        /* ---------- Contributors ---------- */
+        .contrib-grid {
+            margin-top: 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 14px;
+        }
+        .contrib-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 22px 14px;
+            border-radius: var(--radius);
+            border: 1px solid var(--surface-border);
+            background: var(--surface);
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+        }
+        .contrib-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 92, 122, 0.4);
+            box-shadow: 0 12px 40px rgba(229, 57, 95, 0.12);
+        }
+        .contrib-card img {
+            width: 56px; height: 56px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 92, 122, 0.3);
+            background: #1d0d15;
+        }
+        .contrib-card h3 { margin-top: 12px; font-size: 0.92rem; font-weight: 600; word-break: break-all; }
+        .contrib-card p { margin-top: 4px; font-size: 0.78rem; color: var(--text-muted); }
+        .contrib-status {
+            grid-column: 1 / -1;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            padding: 30px 0;
+        }
+        .contrib-status a { color: var(--accent-bright); }
+
+        /* ---------- Footer ---------- */
+        footer {
+            border-top: 1px solid rgba(255, 92, 122, 0.1);
+            padding: 40px 24px;
+        }
+        .footer-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .footer-brand { display: flex; align-items: center; gap: 10px; }
+        .footer-brand img { width: 36px; image-rendering: pixelated; }
+        .footer-links { display: flex; gap: 22px; flex-wrap: wrap; }
+        .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; }
+        .footer-links a:hover { color: var(--accent-bright); }
+        .copyright {
+            width: 100%;
+            margin-top: 16px;
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+        .copyright span { color: var(--accent-bright); }
+    </style>
+</head>
+<body>
+    <div class="bg-fx"></div>
+
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <img src="/Images/150f78d18fd597611f77b4ae7d2f1f58.gif" alt="Nekomo cat">
+            <span class="logo-text">Nekomo</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#download">Download</a>
+            <a href="index.html#community">Community</a>
+            <a href="https://github.com/Nekomo-App/Nekomo" target="_blank" rel="noopener">GitHub</a>
+            <a href="index.html" class="nav-cta">Home</a>
+        </div>
+    </nav>
+
+    <main>
+        <p class="page-label">Credits</p>
+        <h1>Contributors</h1>
+        <p class="page-sub">Nekomo stands on the shoulders of the Kuro No and Shiro projects — and lives on through everyone who keeps it going.</p>
+
+        <h2 class="section-heading">Original Developers <small>The people who built what Nekomo came from</small></h2>
+        <div class="legacy-grid">
+            <a class="dev-card" href="https://github.com/deceptions" target="_blank" rel="noopener">
+                <img src="https://github.com/deceptions.png" alt="deceptions avatar" loading="lazy">
+                <div>
+                    <h3>Deceptions</h3>
+                    <p class="role">Original Kuro No developer</p>
+                    <p class="note">Created Kuro No — the project Nekomo is built from.</p>
+                </div>
+            </a>
+            <a class="dev-card" href="https://github.com/MarshMeadow" target="_blank" rel="noopener">
+                <img src="https://github.com/MarshMeadow.png" alt="MarshMeadow avatar" loading="lazy">
+                <div>
+                    <h3>MarshMeadow</h3>
+                    <p class="role">Shiro developer &middot; Nekomo maintainer</p>
+                    <p class="note">Built the Shiro app and maintains the Nekomo releases.</p>
+                </div>
+            </a>
+            <a class="dev-card" href="https://github.com/LagradOst" target="_blank" rel="noopener">
+                <img src="https://github.com/LagradOst.png" alt="LagradOst avatar" loading="lazy">
+                <div>
+                    <h3>LagradOst / Blatzar</h3>
+                    <p class="role">Cloudstream contributor</p>
+                    <p class="note">Part of the original Kuro project's lineage.</p>
+                </div>
+            </a>
+        </div>
+
+        <h2 class="section-heading">Repository Contributors <small>Live from GitHub — everyone who has committed to Nekomo</small></h2>
+        <div class="contrib-grid" id="contrib-grid">
+            <p class="contrib-status">Loading contributors&hellip;</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="/Images/8e752cf446947d3d01c0eaaf9e1504e2.gif" alt="Nekomo cat loaf">
+                <span class="logo-text">Nekomo</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="dmca.html">DMCA / Disclaimer</a>
+                <a href="https://github.com/Nekomo-App" target="_blank" rel="noopener">GitHub Org</a>
+                <a href="https://discord.com/invite/E4Ezmgg7Ka" target="_blank" rel="noopener">Discord</a>
+            </div>
+            <p class="copyright">Built with <span>&hearts;</span> by the Nekomo community &middot; 猫も</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fetch contributors across Nekomo repos, merge duplicates by login
+        (async function () {
+            const repos = ['Nekomo-App/Nekomo', 'Nekomo-App/neko-source'];
+            const grid = document.getElementById('contrib-grid');
+            const orgUrl = 'https://github.com/orgs/Nekomo-App/people';
+
+            try {
+                const lists = await Promise.all(repos.map(async repo => {
+                    const res = await fetch(`https://api.github.com/repos/${repo}/contributors?per_page=100`);
+                    if (!res.ok) throw new Error('API error');
+                    return res.json();
+                }));
+
+                const merged = new Map();
+                lists.flat().forEach(c => {
+                    if (!c || !c.login || c.type === 'Bot') return;
+                    const existing = merged.get(c.login);
+                    if (existing) existing.contributions += c.contributions;
+                    else merged.set(c.login, { ...c });
+                });
+
+                const contributors = [...merged.values()].sort((a, b) => b.contributions - a.contributions);
+                grid.innerHTML = '';
+
+                if (!contributors.length) {
+                    grid.innerHTML = '<p class="contrib-status">No public contributors yet — <a href="' + orgUrl + '" target="_blank" rel="noopener">meet the org on GitHub</a>.</p>';
+                    return;
+                }
+
+                contributors.forEach(c => {
+                    const card = document.createElement('a');
+                    card.className = 'contrib-card';
+                    card.href = c.html_url;
+                    card.target = '_blank';
+                    card.rel = 'noopener';
+                    card.innerHTML =
+                        '<img src="' + c.avatar_url + '" alt="' + c.login + ' avatar" loading="lazy">' +
+                        '<h3></h3>' +
+                        '<p>' + c.contributions + ' commit' + (c.contributions === 1 ? '' : 's') + '</p>';
+                    card.querySelector('h3').textContent = c.login;
+                    grid.appendChild(card);
+                });
+            } catch (e) {
+                grid.innerHTML = '<p class="contrib-status">Couldn\'t load contributors — <a href="' + orgUrl + '" target="_blank" rel="noopener">view them on GitHub</a>.</p>';
+            }
+        })();
+    </script>
+</body>
+</html>

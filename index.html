@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="gate.js" defer></script>
     <style>
         :root {
             --bg: #0c0508;
@@ -388,6 +389,22 @@
         .community-icon svg { width: 26px; height: 26px; }
         .community-card h3 { font-size: 1.1rem; font-weight: 600; }
         .community-card p { font-size: 0.88rem; color: var(--text-muted); margin-top: 2px; }
+        .discord-stats {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .discord-stats span { display: inline-flex; align-items: center; gap: 6px; }
+        .discord-stats .dot-online {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: #4ade80;
+            box-shadow: 0 0 8px rgba(74, 222, 128, 0.6);
+        }
+        .discord-stats .online { color: #4ade80; }
+        .discord-stats .members { color: var(--text-muted); }
 
         /* ---------- Footer ---------- */
         footer {
@@ -450,6 +467,7 @@
             <a href="#features">Features</a>
             <a href="#download">Download</a>
             <a href="#community">Community</a>
+            <a href="contributors.html">Contributors</a>
             <a href="https://github.com/Nekomo-App/Nekomo" target="_blank" rel="noopener">GitHub</a>
             <a href="uwu-apk.html" class="nav-cta">Get the App</a>
         </div>
@@ -583,6 +601,10 @@
                     <div>
                         <h3>Discord Server</h3>
                         <p>Chat, get support, and hear announcements first</p>
+                        <div class="discord-stats" id="discord-stats" hidden>
+                            <span class="online"><span class="dot-online"></span><span id="discord-online"></span> online</span>
+                            <span class="members" id="discord-members"></span>
+                        </div>
                     </div>
                 </a>
                 <a class="community-card reveal" href="https://github.com/Nekomo-App/Nekomo" target="_blank" rel="noopener">
@@ -620,6 +642,8 @@
                     <a href="https://github.com/Nekomo-App/Nekomo" target="_blank" rel="noopener">Repository</a>
                     <a href="https://github.com/Nekomo-App/Nekomo/releases" target="_blank" rel="noopener">Releases</a>
                     <a href="https://discord.com/invite/E4Ezmgg7Ka" target="_blank" rel="noopener">Discord</a>
+                    <a href="contributors.html">Contributors</a>
+                    <a href="dmca.html">DMCA / Disclaimer</a>
                 </div>
             </div>
             <div class="disclaimer">
@@ -670,6 +694,16 @@
                 if (repo.stargazers_count != null) {
                     document.getElementById('stars-text').textContent = repo.stargazers_count + ' stars';
                     document.getElementById('stars-chip').style.display = 'inline-flex';
+                }
+            } catch (e) { /* ignore */ }
+
+            // Discord member counts via the public invite API (non-critical)
+            try {
+                const inv = await (await fetch('https://discord.com/api/invites/E4Ezmgg7Ka?with_counts=true')).json();
+                if (inv.approximate_member_count != null) {
+                    document.getElementById('discord-online').textContent = inv.approximate_presence_count;
+                    document.getElementById('discord-members').textContent = inv.approximate_member_count + ' members';
+                    document.getElementById('discord-stats').hidden = false;
                 }
             } catch (e) { /* ignore */ }
         })();

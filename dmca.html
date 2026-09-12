@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMCA &amp; Disclaimer — Nekomo</title>
+    <meta name="description" content="DMCA and legal disclaimer for the Nekomo project.">
+    <meta property="og:title" content="DMCA &amp; Disclaimer — Nekomo">
+    <meta property="og:description" content="Legal disclaimer for the Nekomo project.">
+    <meta name="theme-color" content="#8d2249" />
+    <link rel="icon" href="/Images/150f78d18fd597611f77b4ae7d2f1f58.gif" type="image/gif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="gate.js" defer></script>
+    <style>
+        :root {
+            --bg: #0c0508;
+            --surface: rgba(255, 92, 122, 0.05);
+            --surface-border: rgba(255, 92, 122, 0.14);
+            --accent: #e5395f;
+            --accent-bright: #ff5c7a;
+            --accent-deep: #8d2249;
+            --text: #f7ecf0;
+            --text-muted: #b9929f;
+            --radius: 16px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .logo-text { font-family: 'Outfit', 'Inter', sans-serif; }
+        ::selection { background: var(--accent); color: #fff; }
+
+        .bg-fx {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse 80% 50% at 50% -10%, rgba(229, 57, 95, 0.15), transparent 60%),
+                var(--bg);
+        }
+
+        /* ---------- Nav ---------- */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 28px;
+            background: rgba(12, 5, 8, 0.7);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(255, 92, 122, 0.08);
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text);
+        }
+        .nav-logo img { width: 34px; height: 34px; image-rendering: pixelated; }
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(120deg, #ff7a95, var(--accent-bright) 50%, var(--accent-deep));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-links { display: flex; align-items: center; gap: 6px; }
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 10px;
+            transition: color 0.2s, background 0.2s;
+        }
+        .nav-links a:hover { color: var(--text); background: rgba(255, 92, 122, 0.08); }
+        .nav-cta {
+            background: linear-gradient(135deg, var(--accent-bright), var(--accent-deep));
+            color: #fff !important;
+            font-weight: 600;
+        }
+        .nav-cta:hover { filter: brightness(1.15); }
+        @media (max-width: 640px) {
+            .nav-links a:not(.nav-cta) { display: none; }
+        }
+
+        /* ---------- Content ---------- */
+        main {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 140px 24px 90px;
+        }
+        .page-label {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent-bright);
+        }
+        h1 {
+            margin-top: 10px;
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            background: linear-gradient(120deg, #fff 20%, #ffb3c2 55%, var(--accent-bright));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .page-sub { margin-top: 14px; color: var(--text-muted); max-width: 560px; }
+
+        .legal-section {
+            margin-top: 36px;
+            background: var(--surface);
+            border: 1px solid var(--surface-border);
+            border-radius: var(--radius);
+            padding: 28px;
+        }
+        .legal-section h2 { font-size: 1.15rem; font-weight: 600; color: var(--text); }
+        .legal-section p, .legal-section li { margin-top: 10px; font-size: 0.92rem; color: var(--text-muted); }
+        .legal-section ul { margin: 10px 0 0 20px; }
+        .legal-section a { color: var(--accent-bright); text-decoration: none; }
+        .legal-section a:hover { text-decoration: underline; }
+
+        /* ---------- Footer ---------- */
+        footer {
+            border-top: 1px solid rgba(255, 92, 122, 0.1);
+            padding: 40px 24px;
+        }
+        .footer-inner {
+            max-width: 780px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .footer-brand { display: flex; align-items: center; gap: 10px; }
+        .footer-brand img { width: 36px; image-rendering: pixelated; }
+        .footer-links { display: flex; gap: 22px; flex-wrap: wrap; }
+        .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; }
+        .footer-links a:hover { color: var(--accent-bright); }
+        .copyright {
+            width: 100%;
+            margin-top: 16px;
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+        .copyright span { color: var(--accent-bright); }
+    </style>
+</head>
+<body>
+    <div class="bg-fx"></div>
+
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <img src="/Images/150f78d18fd597611f77b4ae7d2f1f58.gif" alt="Nekomo cat">
+            <span class="logo-text">Nekomo</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#download">Download</a>
+            <a href="index.html#community">Community</a>
+            <a href="contributors.html">Contributors</a>
+            <a href="https://github.com/Nekomo-App/Nekomo" target="_blank" rel="noopener">GitHub</a>
+            <a href="index.html" class="nav-cta">Home</a>
+        </div>
+    </nav>
+
+    <main>
+        <p class="page-label">Legal</p>
+        <h1>DMCA &amp; Disclaimer</h1>
+        <p class="page-sub">Please read this page carefully before downloading, using, contributing to, or discussing Nekomo.</p>
+
+        <div class="legal-section">
+            <h2>Open-Source Project</h2>
+            <p>Nekomo is an open-source project maintained by its community. It does <strong>not</strong> host, store, upload, or distribute media content of any kind.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>No Servers or Sources</h2>
+            <p>Nekomo does not operate, own, maintain, or control:</p>
+            <ul>
+                <li>Streaming servers</li>
+                <li>Content providers or streaming sources</li>
+                <li>Download providers</li>
+                <li>Third-party hosted content of any kind</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>Third-Party Data</h2>
+            <p>Any metadata, images, artwork, descriptions, or other information displayed through Nekomo-related applications may originate from third-party APIs or external services. Nekomo does not control and is not responsible for this content.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>No Affiliation</h2>
+            <p>Nekomo is <strong>not</strong> affiliated with, endorsed by, sponsored by, or officially connected to AniList, MyAnimeList, Kitsu, TMDb, or any other content provider unless explicitly stated otherwise.</p>
+            <p>All content, trademarks, copyrights, logos, names, and other intellectual property belong to their respective owners.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>User Responsibility</h2>
+            <p>Users are responsible for how they use the software and for complying with all applicable laws and regulations in their jurisdiction.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>Copyright Concerns &amp; Takedowns</h2>
+            <p>If you believe that content infringes your rights, please contact the relevant source, provider, or website hosting that content directly. Nekomo cannot remove, alter, or manage content it does not host, own, operate, or control.</p>
+            <p>For questions about the project itself, reach out via <a href="https://github.com/Nekomo-App/Nekomo" target="_blank" rel="noopener">GitHub</a> or the <a href="https://discord.com/invite/E4Ezmgg7Ka" target="_blank" rel="noopener">Discord community</a>.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>Project Status</h2>
+            <p>Nekomo is currently maintained as a community project and is not under guaranteed active development. The application may be buggy or unreliable, and future releases are not guaranteed.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="/Images/8e752cf446947d3d01c0eaaf9e1504e2.gif" alt="Nekomo cat loaf">
+                <span class="logo-text">Nekomo</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="contributors.html">Contributors</a>
+                <a href="https://github.com/Nekomo-App" target="_blank" rel="noopener">GitHub Org</a>
+                <a href="https://github.com/Nekomo-App/Nekomo" target="_blank" rel="noopener">Repository</a>
+                <a href="https://discord.com/invite/E4Ezmgg7Ka" target="_blank" rel="noopener">Discord</a>
+            </div>
+            <p class="copyright">Built with <span>&hearts;</span> by the Nekomo community &middot; 猫も</p>
+        </div>
+    </footer>
+</body>
+</html>
