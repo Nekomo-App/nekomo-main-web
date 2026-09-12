@@ -1,12 +1,14 @@
 <div align="center">
 
-# 🌐 Nekomo Website Source
+# 🌐 Nekomo Website
 
-Source code for the official **Nekomo Website**.
+### The open-source source code for the official Nekomo website
 
 <p>
-  <a href="https://nekomoapp.netlify.app">🌍 Live Website</a> •
-  <a href="https://github.com/Nekomo-App/Nekomo">🐱 Main Nekomo Project</a> •
+  <a href="https://nekomoapp.netlify.app">🌍 Live Website</a>
+  ·
+  <a href="https://github.com/Nekomo-App/Nekomo">🐱 Main Project</a>
+  ·
   <a href="https://github.com/Nekomo-App/Nekomo/releases">📦 App Releases</a>
 </p>
 
@@ -16,66 +18,95 @@ Source code for the official **Nekomo Website**.
 
 ## 📖 About
 
-This repository contains the source code, assets, and configuration files used to power the official **Nekomo Website**.
+This repository contains the source code, assets, and configuration files used to build and maintain the official Nekomo website.
 
-The website serves as a hub for project information, downloads, community links, announcements, documentation, and other Nekomo-related resources.
+The website acts as a central hub for:
+
+- Project information
+- App downloads
+- Community links
+- Announcements
+- Documentation
+- Support resources
+- Other Nekomo-related content
 
 ---
 
 ## 🔗 Quick Links
 
-### 🌍 Official Website
-
-https://nekomoapp.netlify.app
-
-### 🐱 Main Nekomo Repository
-
-https://github.com/Nekomo-App/Nekomo
-
-### 📦 Nekomo Releases
-
-https://github.com/Nekomo-App/Nekomo/releases
+| Resource | Link |
+|---|---|
+| 🌍 Official Website | [nekomoapp.netlify.app](https://nekomoapp.netlify.app) |
+| 🐱 Main Nekomo Repository | [Nekomo-App/Nekomo](https://github.com/Nekomo-App/Nekomo) |
+| 📦 App Releases | [Latest Releases](https://github.com/Nekomo-App/Nekomo/releases) |
 
 ---
 
-## ⚠️ Important Notice
+## ⚠️ Repository Scope
 
 This repository contains **website source code only**.
 
-It does **not** contain app releases, anime content, media files, streaming sources, or download providers.
+It does **not** contain:
 
-For app-related information, releases, and project updates, please visit the main Nekomo repository.
+- App releases
+- Anime or manga content
+- Media files
+- Streaming servers
+- Streaming sources
+- Download providers
+- Third-party hosted content
+
+For app downloads, releases, development information, and project updates, visit the [main Nekomo repository](https://github.com/Nekomo-App/Nekomo).
+
+---
+
+## 🛠️ Development
+
+Changes to the website should be submitted through GitHub using pull requests whenever possible.
+
+Contributions may include:
+
+- Website improvements
+- Accessibility updates
+- Bug fixes
+- Documentation changes
+- Design improvements
+- Content corrections
+- Performance optimizations
+
+Please review the repository guidelines before submitting changes.
 
 ---
 
 <details>
-<summary><strong>⚠️ IMPORTANT: DMCA & LEGAL DISCLAIMER (Click to Read)</strong></summary>
+<summary><strong>⚖️ DMCA & Legal Disclaimer</strong></summary>
 
 <br>
 
-* Nekomo is an open-source application and does **not** host, store, upload, or distribute any media content.
+Nekomo is an open-source project and does **not** host, store, upload, or distribute media content.
 
-* Nekomo does **not** operate or control any streaming servers, content providers, or third-party sources.
+Nekomo does not operate, own, maintain, or control streaming servers, content providers, or third-party sources.
 
-* Any metadata, images, or information displayed in the app may come from third-party APIs and services.
+Any metadata, images, artwork, descriptions, or other information displayed through Nekomo-related applications may originate from third-party APIs or external services.
 
-* Nekomo is **not affiliated with, endorsed by, sponsored by, or connected to** AniList, MyAnimeList, Kitsu, TMDb, or any other content provider unless explicitly stated.
+Nekomo is **not affiliated with, endorsed by, sponsored by, or officially connected to** AniList, MyAnimeList, Kitsu, TMDb, or any other content provider unless explicitly stated otherwise.
 
-* All content, trademarks, and copyrights belong to their respective owners.
+All content, trademarks, copyrights, logos, names, and other intellectual property belong to their respective owners.
 
-* Users are responsible for how they use the software and for complying with applicable laws and regulations.
+Users are responsible for how they use the software and for complying with all applicable laws and regulations in their jurisdiction.
 
-* If you believe content infringes your rights, please contact the source or provider hosting that content directly. Nekomo cannot remove content it does not host or control.
+If you believe that content infringes your rights, please contact the relevant source, provider, or website hosting that content directly. Nekomo cannot remove, alter, or manage content it does not host, own, operate, or control.
 
 </details>
-
 
 ---
 
 <div align="center">
 
-### ❤️ Thanks for Visiting
+## ❤️ Thanks for Visiting
 
 **Nekomo Website Source Code Repository**
+
+<sub>Built and maintained by the Nekomo community.</sub>
 
 </div>
